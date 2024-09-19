@@ -214,6 +214,32 @@ footer {
     text-align: center;
 }
 
+/* Slideshow Styles */
+.slideshow {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #f0f0f0; /* Background color for slideshow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slideshow img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.slide {
+    display: none; /* Hide all slides initially */
+}
+
+.slide.active {
+    display: block; /* Show only the active slide */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero h1 {
