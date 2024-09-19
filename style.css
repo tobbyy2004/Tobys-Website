@@ -8,7 +8,7 @@
 /* Body */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f5f7fa;
+    background-color: #e0e0e0; /* Calm background color */
     color: #333;
     line-height: 1.6;
     min-height: 100vh;
@@ -49,13 +49,20 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to right, #007bff, #00d2d3);
-    color: white;
+    background: #ffffff; /* Calm background for the hero section */
     padding: 5em 2em;
     text-align: center;
     position: relative;
     overflow: hidden;
-    animation: backgroundAnimation 10s infinite alternate;
+}
+
+.hero-text {
+    background: rgba(255, 255, 255, 0.9); /* Light background for text to avoid contrast issues */
+    padding: 2em;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+    max-width: 800px;
 }
 
 .hero h1 {
@@ -82,61 +89,6 @@ nav ul li a:hover {
 .hero .btn:hover {
     background-color: #fdd835;
     color: #000;
-}
-
-/* Slideshow Section */
-.slideshow-container {
-    position: relative;
-    max-width: 100%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.mySlides {
-    display: none;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 3px;
-    user-select: none;
-}
-
-.next {
-    right: 0;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-    background-color: #717171;
 }
 
 /* Section Styling */
@@ -255,38 +207,11 @@ section {
 
 /* Footer */
 footer {
-    background-color: #ffffff;
+    background-color: #f0f0f0; /* Calm footer background color */
     color: #666;
     border-top: 1px solid #e0e0e0;
     padding: 1em 2em;
     text-align: center;
-}
-
-.footer-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.footer-content ul {
-    list-style: none;
-    padding: 0;
-    margin: 1em 0 0;
-}
-
-.footer-content ul li {
-    display: inline;
-    margin: 0 1em;
-}
-
-.footer-content ul li a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.footer-content ul li a:hover {
-    color: #0056b3;
 }
 
 /* Responsive Design */
@@ -307,9 +232,9 @@ footer {
 /* Animations */
 @keyframes backgroundAnimation {
     0% {
-        background-color: #f5f7fa;
+        background-color: #e0e0e0; /* Calm background color */
     }
     100% {
-        background-color: #e0e0e0;
+        background-color: #f5f7fa; /* Lighter calm color */
     }
 }
