@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
- <style>
-       <meta charset="UTF-8">
+ <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Home - Oluwatobiloba</title>
     <link rel="stylesheet" href="style.css"> 
+    <style>
+        /* Inline CSS to handle slideshow animation */
+        .slideshow {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+            background: #f0f0f0; /* Background color for slideshow */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .slideshow img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 5px;
+        }
+
+        .slide {
+            display: none; /* Hide all slides initially */
+        }
+
+        .slide.active {
+            display: block; /* Show only the active slide */
+        }
     </style>
+</head>
 <body>
     <header>
         <nav>
