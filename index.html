@@ -24,10 +24,73 @@
             <p class="intro">I am Oluwatobiloba, I major in computer Science with a focus in data sciences. I enjoy solving problems and creating innovative solutions to improve user experiences. I’m dedicated to delivering impactful results on every project I undertake.</p>
             <a href="https://tobbyy2004.github.io/Toby-Numbers-game/" target="_blank" class="btn">Play the Game</a>
         </section>
+
+        <!-- Slideshow Section -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/photo1.png" style="width:100%" alt="Slide 1">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/photo2.png" style="width:100%" alt="Slide 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/photo3.png" style="width:100%" alt="Slide 3">
+            </div>
+
+            <!-- Navigation buttons for slideshow -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- Dots for slideshow -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </main>
 
+    <!-- Modern Footer -->
     <footer>
-        <p>&copy; 2024 Oluwatobiloba. All rights reserved.</p>
+        <div class="footer-content">
+            <p>© 2024 Oluwatobiloba. All Rights Reserved.</p>
+            <ul>
+                <li><a href="https://instagram.com/t.obbyy" target="_blank">Instagram</a></li>
+                <li><a href="https://linkedin.com/in/toby" target="_blank">LinkedIn</a></li>
+                <li><a href="mailto:tobyajayi15@gmail.com">Email</a></li>
+            </ul>
+        </div>
     </footer>
+
+    <!-- Slideshow JavaScript -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
 </body>
 </html>
