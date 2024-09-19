@@ -19,7 +19,7 @@ body {
 
 /* Header and Navigation */
 header {
-    background-color: #ffffff;
+    background-color: #ffeb3b; /* Sunshine gradient color */
     border-bottom: 1px solid #e0e0e0;
     padding: 1em 2em;
 }
@@ -49,7 +49,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: #ffffff; /* Calm background for the hero section */
+    background: linear-gradient(to right, #ffeb3b, #fff5e6); /* Sunshine gradient */
     padding: 5em 2em;
     text-align: center;
     position: relative;
@@ -207,7 +207,7 @@ section {
 
 /* Footer */
 footer {
-    background-color: #f0f0f0; /* Calm footer background color */
+    background-color: #ffeb3b; /* Matches header */
     color: #666;
     border-top: 1px solid #e0e0e0;
     padding: 1em 2em;
